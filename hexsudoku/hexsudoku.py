@@ -184,7 +184,7 @@ def play_game():
     hexudoku = remove_nums(solution, num)
     print_grid(hexudoku)
     while True:
-        hexudoku = take_turn(hexudoku)
+        hexudoku = take_turn(hexudoku) # take turns until the puzzle is solved
         if is_complete(hexudoku):
             print("Congradulations! You solved it!")
             break
